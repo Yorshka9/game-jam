@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <a href="../index.html">
+            <div class="homecontainer">
+                <div class="homebutton">
+                    <svg width="80" height="80">
+                        <polygon points="50,15 50,65 20,40" style="fill:white;" />
+                    </svg>
+                </div>
+                <div class="hometext"></div>
+                <p class="homebtntext">Take me back!</p>
+            </div>
+            </a>
+            
+    <div id="formContainer">
+        <form name=myform>
+            <h1>Thanks for trying out our games! Please take a moment and type your feedback in here:</h1>
+            <textarea onkeypress="return changeMessage()" name=mytext rows=15 wrap=virtual cols=70 style="font-size: 12px"></textarea>
+            <br><br>
+            <input onclick=resetit() type=button value="Submit Feedback">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 

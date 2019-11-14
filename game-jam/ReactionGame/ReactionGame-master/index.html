@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <link href="Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="instructions"> 
+            <button onclick="letMePlay()" id="letmeplay" class="button">Let me play!</button>
+        <div>
+            <br>
+            <h3>This is how you play the game. </h3>  
+            <h3>1. Player one has SPACEBAR. </h3>  
+            <h3>2. Player two has ENTER. </h3>  
+            <h3>3. Smash when circle becomes salmon.</h3>  
+            <h3>4. May the fastest one win.</h3>   
+        </div>
+        
+    </div>
+
+    <div id="popup"> 
+        <p id="winner"></p>
+        <button onclick="popUpDown()" id="yay" class="button">Yay!</button>
+    </div>
+
+    <div class="container">
+
+        <div class="timer" >
+            <h3>
+                <span id="p1cheater"></span>
+                <span id="p1hundreds"> 0 </span>
+            </h3>
+        </div>
+
+        <div id="square">
+            <button onclick="startBtn()" class="button" id="start">START!</button>
+            <span id="postgame">
+            <button onclick="againBtn()" class="button" id="again">Next round</button>
+            </span>
+        </div> 
+
+
+        <div class="timer">
+            <h3>
+                <span id="p2cheater"></span>
+                <span id="p2hundreds"> 0 </span>
+            </h3>
+        </div>
+        
+    </div>
+
+    <div class="homecontainer">
+        <div class="homebutton">
+            <svg width="80" height="80">
+                <polygon points="50,15 50,65 20,40" style="fill:#242424;" />
+            </svg>
+        </div>
+        <div class="hometext"></div>
+        <p class="homebtntext">Take me back!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

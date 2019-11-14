@@ -1,0 +1,78 @@
+body {
+    background-image: -webkit-linear-gradient(left, #A8E6CE 50%, #DCEDC2 50%);
+    background-image: -moz-linear-gradient(left, #A8E6CE 50%, #DCEDC2 50%);
+    background-image: -o-linear-gradient(left, #A8E6CE 50%, #DCEDC2 50%);
+    background-image: linear-gradient(to right, #A8E6CE 50%, #DCEDC2 50%);
+}
+
+#formContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 9px;
+    
+}
+
+.homecontainer {
+    display: flex;
+    justify-items: flex-start;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    width: 100%;
+  }
+  
+  .homecontainer .homebutton {
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    width: 80px;
+    background-color: salmon;
+    border-radius: 50%;
+    transition: .25s;
+    z-index: 3;
+  }
+  
+  .homecontainer:hover .homebutton {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+  
+  .homecontainer .hometext {
+    position: absolute;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    width: 0px;
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: salmon;
+    border-radius: 10px;
+    transition: .6s;
+    transition-delay: 0;
+  }
+  
+  .homecontainer:hover .hometext {
+    width: 250px;
+    transition-delay: 0.2s;
+  }
+  
+  .homecontainer .homebtntext {
+    position: relative;
+    left: 15px;
+    z-index: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    opacity: 0;
+    transition: 0.15s;
+    transition-delay: 0;
+  }
+  
+  .homecontainer:hover .homebtntext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 1;
+    transition: 0.45s;
+    transition-delay: .75s;
+  }

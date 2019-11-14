@@ -1,0 +1,133 @@
+body {
+  text-align: center;
+  background-color: rgb(60, 117, 179);
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  2%;
+  color: #FEF2BF;
+}
+
+#level-description {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin:  1%;
+  color: #FEF2BF;
+  padding-bottom: 30px;
+
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 250px;
+  width: 300px;
+  border: 10px solid black;
+  border-radius: 10%;
+  background-image: url(img/villager.jpg);
+  background-size: cover;
+
+}
+
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.chicken {
+  background-image: url(img/chicken.png);
+  background-size: cover;
+}
+
+.pig {
+  background-image: url(img/piglet.jpg);
+
+}
+
+.villager {
+  background-image: url(img/villager.jpg);
+
+}
+
+.cat {
+  background-image: url(img/cat.png);
+
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+.homecontainer {
+  display: flex;
+  justify-items: flex-start;
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  width: 100%;
+}
+
+.homecontainer .homebutton {
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+  height: 80px;
+  width: 80px;
+  background-color: salmon;
+  border-radius: 50%;
+  transition: .25s;
+  z-index: 3;
+}
+
+.homecontainer:hover .homebutton {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.homecontainer .hometext {
+  position: absolute;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 0px;
+  margin-left: 20px;
+  margin-top: 15px;
+  background-color: salmon;
+  border-radius: 10px;
+  transition: .6s;
+  transition-delay: 0;
+}
+
+.homecontainer:hover .hometext {
+  width: 250px;
+  transition-delay: 0.2s;
+}
+
+.homecontainer .homebtntext {
+  position: relative;
+  left: 15px;
+  z-index: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  opacity: 0;
+  transition: 0.15s;
+  transition-delay: 0;
+}
+
+.homecontainer:hover .homebtntext {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 1;
+  transition: 0.45s;
+  transition-delay: .75s;
+}

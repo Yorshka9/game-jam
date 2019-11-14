@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <h1 id="h1">Maze Woman</h1>
+    <div id="flexContainer" class="flexContainer">
+        <div id="countdownArea"> 20 Seconds ==>
+            <input type="button" class="button" id="button" value="START!" onclic k="setTimer() ">
+        </div>
+        <h3 id="score">Score: </h3>
+    </div>
+    <div class="game_container">
+        <div id="image"></div>
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <a href="../index.html">
+        <div class="homecontainer">
+            <div class="homebutton">
+                <svg width="80" height="80">
+                    <polygon points="50,15 50,65 20,40" style="fill:#242424;;" />
+                </svg>
+            </div>
+            <div class="hometext"></div>
+            <p class="homebtntext">Take me back!</p>
+        </div>
+    </a>
+    <script src="script.js"></script>
+</body>
+
+</html>
